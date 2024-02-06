@@ -50,12 +50,9 @@
 
 // root.render(parent);
 
-import React from "react";
-import ReactDOM from "react-dom/client";
-
 // React Element =object=> when we render this element to dom it becomes a html element
 
-const heading = React.createElement("h1", { id: "heading" }, "Zaid React 🚀");
+// const heading = React.createElement("h1", { id: "heading" }, "Zaid React 🚀");
 
 // const Title = function () {
 //   return (
@@ -70,30 +67,43 @@ const heading = React.createElement("h1", { id: "heading" }, "Zaid React 🚀");
 // JSX (tanspile before it reaches the js)-PARCEL - Babel
 
 // React Element
-const jsxHeading = (
-  <h1 className="head" tabIndex="1">
-    React start here 🚀
-  </h1>
-);
-
+// const jsxHeading = (
+//   <h1 className="head" tabIndex="1">
+//     React start here 🚀
+//   </h1>
+// );
+import React from "react";
+import ReactDOM from "react-dom/client";
 // React Functional Component
 // Class based component - OLD
 
 // Functional component  - NEW
-const Title = () => <h1>Title</h1>;
+const elem = <span>React Element</span>;
 
-const number = 1000;
-// component composition component inside component
+const Title = () => (
+  <h1 className="head" tabIndex="5">
+    {elem}
+    Like reactjs
+    {/* <HeadingComponent /> */}
+  </h1>
+);
+
 const HeadingComponent = () => (
   // return jsx
   <div id="container">
     {/* <Title /> */}
     {/* you can write any js code in  jsx {} */}
+    <Title />
     <h1>{100 * 200}</h1>
     <h1>{console.log(number)}</h1>
+    {Title()}
     <h1 className="heading">React Functional Component </h1>
   </div>
 );
+
+const number = 1000;
+
+// component composition component inside component
 
 // component composition
 
