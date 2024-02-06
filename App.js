@@ -50,7 +50,7 @@
 
 // root.render(parent);
 
-import React, { Component } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 
 // React Element =object=> when we render this element to dom it becomes a html element
@@ -70,13 +70,26 @@ const jsxHeading = (
 
 // React Functional Component
 // Class based component - OLD
+
 // Functional component  - NEW
-const HeadingComponent = () => {
-  
-};
+const Title = () => <h1>Title</h1>;
+const HeadingComponent = () => (
+  // return jsx
+  <div id="container">
+    <Title />
+    <h1 className="heading">React Functional Component </h1>
+  </div>
+);
+
+// const HeadingComponent = () => {
+//   return <h1 className="heading">React Functional Component </h1>;
+// };
+// return jsx
+
+// const fn = () => true;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(jsxHeading);
+root.render(<HeadingComponent />);
 
 // JSX =>babel transpile => React.createElement=> ReactElement.JS object=> HTMLElement(render)
