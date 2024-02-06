@@ -50,7 +50,7 @@
 
 // root.render(parent);
 
-import React from "react";
+import React, { Component } from "react";
 import ReactDOM from "react-dom/client";
 
 // React Element =object=> when we render this element to dom it becomes a html element
@@ -58,13 +58,25 @@ import ReactDOM from "react-dom/client";
 const heading = React.createElement("h1", { id: "heading" }, "Zaid React 🚀");
 
 // JSX is not Html in JS  -->html like syntax
-const jsxHeading = <h1 id="heading">React start here</h1>;
+// jsx code transpile by jsx engine before going to js engine
+// JSX (tanspile before it reaches the js)-PARCEL - Babel
 
-console.log(jsxHeading);
-console.log(heading);
+// React Element
+const jsxHeading = (
+  <h1 className="head" tabIndex="1">
+    React start here 🚀
+  </h1>
+);
+
+// React Functional Component
+// Class based component - OLD
+// Functional component  - NEW
+const HeadingComponent = () => {
+  
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(jsxHeading);
 
-// e
+// JSX =>babel transpile => React.createElement=> ReactElement.JS object=> HTMLElement(render)
