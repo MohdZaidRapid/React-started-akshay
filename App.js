@@ -94,8 +94,8 @@ const HeadingComponent = () => (
     {/* <Title /> */}
     {/* you can write any js code in  jsx {} */}
     <Title />
-    <h1>{100 * 200}</h1>
-    <h1>{console.log(number)}</h1>
+    {/* <h1>{100 * 200}</h1>
+    <h1>{console.log(number)}</h1> */}
     {Title()}
     <h1 className="heading">React Functional Component </h1>
   </div>
