@@ -73,6 +73,7 @@ const jsxHeading = (
 
 // Functional component  - NEW
 const Title = () => <h1>Title</h1>;
+// component composition component inside component 
 const HeadingComponent = () => (
   // return jsx
   <div id="container">
@@ -80,6 +81,8 @@ const HeadingComponent = () => (
     <h1 className="heading">React Functional Component </h1>
   </div>
 );
+
+// component composition 
 
 // const HeadingComponent = () => {
 //   return <h1 className="heading">React Functional Component </h1>;
