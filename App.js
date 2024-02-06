@@ -57,6 +57,14 @@ import ReactDOM from "react-dom/client";
 
 const heading = React.createElement("h1", { id: "heading" }, "Zaid React 🚀");
 
+// const Title = function () {
+//   return (
+//     <h1 className="heading1" tabIndex="5">
+//       master react
+//     </h1>
+//   );
+// };
+
 // JSX is not Html in JS  -->html like syntax
 // jsx code transpile by jsx engine before going to js engine
 // JSX (tanspile before it reaches the js)-PARCEL - Babel
@@ -73,16 +81,21 @@ const jsxHeading = (
 
 // Functional component  - NEW
 const Title = () => <h1>Title</h1>;
-// component composition component inside component 
+
+const number = 1000;
+// component composition component inside component
 const HeadingComponent = () => (
   // return jsx
   <div id="container">
-    <Title />
+    {/* <Title /> */}
+    {/* you can write any js code in  jsx {} */}
+    <h1>{100 * 200}</h1>
+    <h1>{console.log(number)}</h1>
     <h1 className="heading">React Functional Component </h1>
   </div>
 );
 
-// component composition 
+// component composition
 
 // const HeadingComponent = () => {
 //   return <h1 className="heading">React Functional Component </h1>;
