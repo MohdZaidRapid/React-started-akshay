@@ -124,6 +124,9 @@ import ReactDOM from "react-dom/client";
  *    - Search
  *    - Carts
  *    - RestaurantContainer
+ *      - ReastuarantCard
+ *        - Img
+ *        - Name of Res  ,Start Rating,cuisine,,delivery cart,etc
  *    - RestaurantCard
  * Footer
  *  - CopyRight
@@ -154,10 +157,35 @@ const Header = () => {
   );
 };
 
+const styleCard = {
+  backgroundColor: "#0f0f0f",
+};
+
+const RestaurantCard = () => {
+  return (
+    <div className="res-card" style={styleCard}>
+      <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill" />
+      <h3>Meghna Foods</h3>
+    </div>
+  );
+};
+
+const Body = () => {
+  return (
+    <div className="body">
+      <div className="search">Search</div>
+      <div className="res-container">
+        <RestaurantCard />
+      </div>
+    </div>
+  );
+};
+
 const AppLayout = () => {
   return (
     <div className="app">
       <Header />
+      <Body />
     </div>
   );
 };
