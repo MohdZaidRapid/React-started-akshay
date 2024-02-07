@@ -163,20 +163,93 @@ const Header = () => {
 
 const RestaurantCard = (props) => {
   // console.log(props);
-  const { cuisisne, resName } = props;
+  const { resData } = props;
   return (
     <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
       <img
         className="res-logo"
         alt="res-logo"
-        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/iivuhjc2mswi9lublktf"
+        src={
+          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/" +
+          resData.info.cloudinaryImageId
+        }
       />
-      <h3>{resName}</h3>
-      <h4>{cuisisne}</h4>
-      <h4>4.3 stars</h4>
-      <h4>38 minutes</h4>
+      <h3>{resData.info.name}</h3>
+      <h4>{resData.info.cuisines.join(", ")}</h4>
+      <h4>{resData.info.avgRating}</h4>
+      <h4>{resData.info.costForTwo}</h4>
+      <h4>{resData.info.sla?.deliveryTime}</h4>
     </div>
   );
+};
+
+const resObj = {
+  type: "restaurant",
+  info: {
+    id: "413481",
+    name: "Chinese Wok",
+    cloudinaryImageId: "e0839ff574213e6f35b3899ebf1fc597",
+    locality: "HAL 2nd Stage",
+    areaName: "Indiranagar",
+    costForTwo: "₹250 for two",
+    cuisines: ["Chinese", "Asian", "Tibetan", "Desserts"],
+    avgRating: 4.1,
+    parentId: "61955",
+    avgRatingString: "4.1",
+    totalRatingsString: "1K+",
+    sla: {
+      deliveryTime: 26,
+      lastMileTravel: 1.6,
+      serviceability: "SERVICEABLE",
+      slaString: "25-30 mins",
+      lastMileTravelString: "1.6 km",
+      iconType: "ICON_TYPE_EMPTY",
+    },
+    availability: {
+      nextCloseTime: "2024-02-08 02:00:00",
+      opened: true,
+    },
+    badges: {},
+    isOpen: true,
+    type: "F",
+    badgesV2: {
+      entityBadges: {
+        imageBased: {},
+        textBased: {},
+        textExtendedBadges: {},
+      },
+    },
+    aggregatedDiscountInfoV3: {
+      header: "EVERY ITEM",
+      subHeader: "@ ₹149",
+    },
+    orderabilityCommunication: {
+      title: {},
+      subTitle: {},
+      message: {},
+      customIcon: {},
+    },
+    differentiatedUi: {
+      displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+      differentiatedUiMediaDetails: {
+        mediaType: "ADS_MEDIA_ENUM_IMAGE",
+        lottie: {},
+        video: {},
+      },
+    },
+    reviewsSummary: {},
+    displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    restaurantOfferPresentationInfo: {},
+  },
+  analytics: {
+    context: "seo-data-2e54ff95-b702-440a-91f7-8c421898e9c5",
+  },
+  cta: {
+    link: "https://www.swiggy.com/restaurants/chinese-wok-hal-2nd-stage-indiranagar-bangalore-413481",
+    text: "RESTAURANT_MENU",
+    type: "WEBLINK",
+  },
+  widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
 };
 
 const Body = () => {
@@ -184,11 +257,7 @@ const Body = () => {
     <div className="body">
       <div className="search">Search</div>
       <div className="res-container">
-        <RestaurantCard
-          resName="Meghana Foods"
-          cuisisne="Biryani, north Indian,Asian"
-        />
-        <RestaurantCard resName="Kfc" cuisisne="Burger, Fast Food" />
+        <RestaurantCard resData={resObj} />
       </div>
     </div>
   );
