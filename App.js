@@ -164,6 +164,8 @@ const Header = () => {
 const RestaurantCard = (props) => {
   // console.log(props);
   const { resData } = props;
+
+  const { name, cuisines, avgRating, costForTwo, deliveryTime } = resData?.data;
   return (
     <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
       <img
@@ -174,11 +176,11 @@ const RestaurantCard = (props) => {
           resData.data.cloudinaryImageId
         }
       />
-      <h3>{resData.data.name}</h3>
-      <h4>{resData.data.cuisines.join(", ")}</h4>
-      <h4>{resData.data.avgRating}</h4>
-      <h4>{resData.data.costForTwo}</h4>
-      <h4>{resData.data.sla?.deliveryTime}</h4>
+      <h3>{name}</h3>
+      <h4>{cuisines.join(", ")}</h4>
+      <h4>{avgRating}</h4>
+      <h4>{costForTwo / 100}</h4>
+      <h4>{deliveryTime}</h4>
     </div>
   );
 };
@@ -2232,7 +2234,7 @@ const Body = () => {
     <div className="body">
       <div className="search">Search</div>
       <div className="res-container">
-        <RestaurantCard resData={resList[0]} />
+        {/* <RestaurantCard resData={resList[0]} />
         <RestaurantCard resData={resList[1]} />
         <RestaurantCard resData={resList[2]} />
         <RestaurantCard resData={resList[3]} />
@@ -2240,7 +2242,10 @@ const Body = () => {
         <RestaurantCard resData={resList[5]} />
         <RestaurantCard resData={resList[6]} />
         <RestaurantCard resData={resList[7]} />
-        <RestaurantCard resData={resList[8]} />
+        <RestaurantCard resData={resList[8]} /> */}
+        {resList.map((restaurant) => (
+          <RestaurantCard resData={restaurant} />
+        ))}
       </div>
     </div>
   );
