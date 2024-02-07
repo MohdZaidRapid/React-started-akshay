@@ -161,7 +161,8 @@ const Header = () => {
 //   backgroundColor: "#0f0f0f",
 // };
 
-const RestaurantCard = () => {
+const RestaurantCard = (props) => {
+  console.log(props);
   return (
     <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
       <img
@@ -182,20 +183,11 @@ const Body = () => {
     <div className="body">
       <div className="search">Search</div>
       <div className="res-container">
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
+        <RestaurantCard
+          restaurantName="Meghana Foods"
+          cuisisne="Biryani, north Indian,Asian"
+        />
+        <RestaurantCard restaurantName="Kfc" cuisisne="Burger, Fast Food" />
       </div>
     </div>
   );

@@ -47,5 +47,9 @@ create root
 render
 
 
+<!-- Props -->
+props are normal arguements to our function
+passing props ===passing arguements
+
 
 
