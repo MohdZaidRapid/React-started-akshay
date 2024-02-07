@@ -72,36 +72,31 @@
 //     React start here 🚀
 //   </h1>
 // );
-import React from "react";
-import ReactDOM from "react-dom/client";
-// React Functional Component
-// Class based component - OLD
 
-// Functional component  - NEW
-const elem = <span>React Element</span>;
+// const elem = <span>React Element</span>;
 
-const Title = () => (
-  <h1 className="head" tabIndex="5">
-    {elem}
-    Like reactjs
-    {/* <HeadingComponent /> */}
-  </h1>
-);
+// const Title = () => (
+//   <h1 className="head" tabIndex="5">
+//     {elem}
+//     Like reactjs
+//     {/* <HeadingComponent /> */}
+//   </h1>
+// );
 
-const HeadingComponent = () => (
-  // return jsx
-  <div id="container">
-    {/* <Title /> */}
-    {/* you can write any js code in  jsx {} */}
-    <Title />
-    {/* <h1>{100 * 200}</h1>
-    <h1>{console.log(number)}</h1> */}
-    {Title()}
-    <h1 className="heading">React Functional Component </h1>
-  </div>
-);
+// const HeadingComponent = () => (
+//   // return jsx
+//   <div id="container">
+//     {/* <Title /> */}
+//     {/* you can write any js code in  jsx {} */}
+//     <Title />
+//     {/* <h1>{100 * 200}</h1>
+//     <h1>{console.log(number)}</h1> */}
+//     {Title()}
+//     <h1 className="heading">React Functional Component </h1>
+//   </div>
+// );
 
-const number = 1000;
+// const number = 1000;
 
 // component composition component inside component
 
@@ -113,9 +108,62 @@ const number = 1000;
 // return jsx
 
 // const fn = () => true;
+// React Functional Component
+// Class based component - OLD
+
+// Functional component  - NEW
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+/**
+ * Header
+ *  - Logo
+ *  - Nav Items
+ * Body
+ *    - Search
+ *    - Carts
+ *    - RestaurantContainer
+ *    - RestaurantCard
+ * Footer
+ *  - CopyRight
+ *  - Links
+ *  - Addrress
+ *  - Contact
+ */
+
+const Header = () => {
+  return (
+    <div className="header">
+      <div className="logo-container">
+        <img
+          src="https://png.pngtree.com/png-vector/20230217/ourmid/pngtree-food-logo-design-for-restaurant-and-business-png-image_6604922.png"
+          alt="App Logo"
+          className="logo"
+        />
+      </div>
+      <div className="nav-items">
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Cart</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+const AppLayout = () => {
+  return (
+    <div className="app">
+      <Header />
+    </div>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<HeadingComponent />);
+root.render(<AppLayout />);
 
 // JSX =>babel transpile => React.createElement=> ReactElement.JS object=> HTMLElement(render)
