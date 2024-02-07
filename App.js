@@ -157,15 +157,22 @@ const Header = () => {
   );
 };
 
-const styleCard = {
-  backgroundColor: "#0f0f0f",
-};
+// const styleCard = {
+//   backgroundColor: "#0f0f0f",
+// };
 
 const RestaurantCard = () => {
   return (
-    <div className="res-card" style={styleCard}>
-      <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill" />
-      <h3>Meghna Foods</h3>
+    <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
+      <img
+        className="res-logo"
+        alt="res-logo"
+        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/iivuhjc2mswi9lublktf"
+      />
+      <h3>Meghana Foods</h3>
+      <h4>Biryani, north Indian,Asian</h4>
+      <h4>4.3 stars</h4>
+      <h4>38 minutes</h4>
     </div>
   );
 };
@@ -175,6 +182,19 @@ const Body = () => {
     <div className="body">
       <div className="search">Search</div>
       <div className="res-container">
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
         <RestaurantCard />
       </div>
     </div>
