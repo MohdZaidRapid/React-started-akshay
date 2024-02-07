@@ -51,7 +51,9 @@ render
 props are normal arguements to our function
 passing props ===passing arguements
 
-
-
 <!--  jargon-->
 confing driven ui
+
+<!-- key -->
+why we need keys
+stop rerender
