@@ -57,3 +57,5 @@ confing driven ui
 <!-- key -->
 why we need keys
 stop rerender
+never use index as key
+index as an key in anti-pattern

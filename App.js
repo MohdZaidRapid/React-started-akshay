@@ -2229,6 +2229,8 @@ const resList = [
   },
 ];
 
+// not using key <<<<<<<<<<index<<<<<<<<<<unique key(best practice)
+
 const Body = () => {
   return (
     <div className="body">
