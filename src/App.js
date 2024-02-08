@@ -1,29 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
+import Body from "./components/Body";
 
-const RestaurantCard = (props) => {
-  const { resData } = props;
 
-  const { name, cuisines, avgRating, costForTwo, deliveryTime } = resData?.data;
-  return (
-    <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
-      <img
-        className="res-logo"
-        alt="res-logo"
-        src={
-          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/" +
-          resData.data.cloudinaryImageId
-        }
-      />
-      <h3>{name}</h3>
-      <h4>{cuisines.join(", ")}</h4>
-      <h4>{avgRating}</h4>
-      <h4>{costForTwo / 100}</h4>
-      <h4>{deliveryTime}</h4>
-    </div>
-  );
-};
 
 const resList = [
   {
@@ -2068,19 +2048,6 @@ const resList = [
     subtype: "basic",
   },
 ];
-
-const Body = () => {
-  return (
-    <div className="body">
-      <div className="search">Search</div>
-      <div className="res-container">
-        {resList.map((restaurant) => (
-          <RestaurantCard key={restaurant.data.id} resData={restaurant} />
-        ))}
-      </div>
-    </div>
-  );
-};
 
 const AppLayout = () => {
   return (
