@@ -59,3 +59,27 @@ why we need keys
 stop rerender
 never use index as key
 index as an key in anti-pattern
+
+
+
+<!-- structure of food app  -->
+/**
+ * Header
+ *  - Logo
+ *  - Nav Items
+ * Body
+ *    - Search
+ *    - Carts
+ *    - RestaurantContainer
+ *      - ReastuarantCard
+ *        - Img
+ *        - Name of Res  ,Start Rating,cuisine,,delivery cart,etc
+ *    - RestaurantCard
+ * Footer
+ *  - CopyRight
+ *  - Links
+ *  - Addrress
+ *  - Contact
+ */
+
+ JSX =>babel transpile => React.createElement=> ReactElement.JS object=> HTMLElement(render)
