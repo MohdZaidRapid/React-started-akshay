@@ -92,3 +92,11 @@ index as an key in anti-pattern
  - 
 whenever a state variable is changes it re render the component
 
+
+<!-- Reconciliation algorithm (ReactFiber) -->
+# we have a dom 
+
+<!-- res-container -->
+res-container have 
+    - 7 Rescards
+
