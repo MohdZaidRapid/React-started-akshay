@@ -47,5 +47,48 @@ create root
 render
 
 
+<!-- Props -->
+props are normal arguements to our function
+passing props ===passing arguements
 
+<!--  jargon-->
+confing driven ui
+
+<!-- key -->
+why we need keys
+stop rerender
+never use index as key
+index as an key in anti-pattern
+
+
+
+<!-- structure of food app  -->
+/**
+ * Header
+ *  - Logo
+ *  - Nav Items
+ * Body
+ *    - Search
+ *    - Carts
+ *    - RestaurantContainer
+ *      - ReastuarantCard
+ *        - Img
+ *        - Name of Res  ,Start Rating,cuisine,,delivery cart,etc
+ *    - RestaurantCard
+ * Footer
+ *  - CopyRight
+ *  - Links
+ *  - Addrress
+ *  - Contact
+ */
+
+ JSX =>babel transpile => React.createElement=> ReactElement.JS object=> HTMLElement(render)
+
+
+ <!-- React hooks -->
+ <!-- normal JS utility functions - React hooks -->
+ - useState()  - Super power state variable in react 
+ - useEffect() - 
+ - 
+whenever a state variable is changes it re render the component
 
