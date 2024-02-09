@@ -83,3 +83,12 @@ index as an key in anti-pattern
  */
 
  JSX =>babel transpile => React.createElement=> ReactElement.JS object=> HTMLElement(render)
+
+
+ <!-- React hooks -->
+ <!-- normal JS utility functions - React hooks -->
+ - useState()  - Super power state variable in react 
+ - useEffect() - 
+ - 
+whenever a state variable is changes it re render the component
+
