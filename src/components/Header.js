@@ -5,6 +5,7 @@ const Header = () => {
   // let btnName = "Login";
 
   const [btnNameReact, setbtnNameReact] = useState("Login");
+
   return (
     <div className="header">
       <div className="logo-container">
@@ -19,8 +20,10 @@ const Header = () => {
           <button
             className="login"
             onClick={() => {
-              setbtnNameReact("logout");
-              console.log(btnName);
+              btnNameReact === "Login"
+                ? setbtnNameReact("logout")
+                : setbtnNameReact("Login");
+              console.log(btnNameReact);
             }}
           >
             {btnNameReact}

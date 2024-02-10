@@ -113,3 +113,10 @@ as soon as page loads we will render the ui now we will make an api call we will
 # first body will render then useEffect will be called
 
 body -> useEffect
+
+<!--when you change state it update component  -->
+
+const [header,setHeader]  = useState("");
+
+setHeader("hello");
+it will rerender header component and this time value of header was hello so  it will update it
