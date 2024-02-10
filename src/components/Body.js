@@ -4,9 +4,14 @@ import Shimmer from "./Shimmer";
 
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
+
+  const [searchText, setSearchText] = useState("");
   useEffect(() => {
     fetchData();
   }, []);
+
+  // whenever state variables update ,react trigger a reconcilation cycle(re-render the component)
+  console.log("Body Rendered");
 
   const fetchData = async () => {
     const data = await fetch(
@@ -25,9 +30,29 @@ const Body = () => {
   ) : (
     <div className="body">
       <div className="filter">
+        <div className="search">
+          <input
+            type="text"
+            className="search-box"
+            value={searchText}
+            onChange={(e) => {
+              setSearchText(e.target.value);
+            }}
+          />
+          <button
+            onClick={() => {
+              // Filter the restuarant
+              // searchtText
+              console.log(searchText);
+            }}
+          >
+            Search
+          </button>
+        </div>
         <button
           className="filter-btn"
           onClick={() => {
+            // Filter the restaurant cards and update the UI
             const filteredList = listOfRestaurants.filter(
               (res) => res.info.avgRating > 4
             );
