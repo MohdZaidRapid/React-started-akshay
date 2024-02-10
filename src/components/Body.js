@@ -4,9 +4,9 @@ import resList from "../utils/mockData";
 
 const Body = () => {
   // Local State Variable - Super powerful variable
-  // const [listOfRestaurants, setListOfRestaurants] = useState(resList);
-  const arr = useState(resList);
-  const [listOfRestaurants, setListOfRestaurants] = arr;
+  // const arr = useState(resList);
+  // const [listOfRestaurants, setListOfRestaurants] = arr;
+  const [listOfRestaurants, setListOfRestaurants] = useState(resList);
   // Normal js variable
   // let listOfRestaurants = null;
 

@@ -100,3 +100,14 @@ whenever a state variable is changes it re render the component
 res-container have 
     - 7 Rescards
 
+
+<!-- how react fetch data -->
+<!-- 1  -->
+as soon as page loads we will make an api call wait for data come and make  api call and render the ui
+<!-- 2 -->
+as soon as page loads we will render the ui now we will make an api call we will now re-reneder data with api 
+
+### react user second approach 
+# gives better ux
+
+<!--  -->
