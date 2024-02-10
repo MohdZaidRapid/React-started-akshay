@@ -71,7 +71,7 @@ const Body = () => {
     //   )
     // );
     setListOfRestaurants(
-      json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants
+      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
   };
 
@@ -84,8 +84,9 @@ const Body = () => {
             // filter logic here
 
             const filteredList = listOfRestaurants.filter(
-              (res) => res.data.avgRating > 4
+              (res) => res.info.avgRating > 4
             );
+            console.log(filteredList);
             setListOfRestaurants(filteredList);
           }}
         >
@@ -94,7 +95,6 @@ const Body = () => {
       </div>
       <div className="res-container">
         {listOfRestaurants.map((restaurant) => {
-          
           return (
             <RestaurantCard key={restaurant.info.id} resData={restaurant} />
           );
