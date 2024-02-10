@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import RestaurantCard from "./RestaurantCard";
 import resList from "../utils/mockData";
 
@@ -6,7 +6,7 @@ const Body = () => {
   // Local State Variable - Super powerful variable
   // const arr = useState(resList);
   // const [listOfRestaurants, setListOfRestaurants] = arr;
-  const [listOfRestaurants, setListOfRestaurants] = useState(resList);
+
   // Normal js variable
   // let listOfRestaurants = null;
 
@@ -46,6 +46,19 @@ const Body = () => {
   //     },
   //   },
   // ];
+  const [listOfRestaurants, setListOfRestaurants] = useState(resList);
+  // useEffect called after the  component render
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    const data = await fetch();
+
+    const json = await data.json();
+
+    console.log(json);
+  };
 
   return (
     <div className="body">

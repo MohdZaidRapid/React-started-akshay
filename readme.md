@@ -110,4 +110,6 @@ as soon as page loads we will render the ui now we will make an api call we will
 ### react user second approach 
 # gives better ux
 
-<!--  -->
+# first body will render then useEffect will be called
+
+body -> useEffect
