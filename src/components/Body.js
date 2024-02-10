@@ -1,12 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import RestaurantCard from "./RestaurantCard";
-import resList from "../utils/mockData";
+// import resList from "../utils/mockData";
 
 const Body = () => {
   // Local State Variable - Super powerful variable
   // const arr = useState(resList);
   // const [listOfRestaurants, setListOfRestaurants] = arr;
-  const [listOfRestaurants, setListOfRestaurants] = useState(resList);
+
   // Normal js variable
   // let listOfRestaurants = null;
 
@@ -46,6 +46,38 @@ const Body = () => {
   //     },
   //   },
   // ];
+  const [listOfRestaurants, setListOfRestaurants] = useState([]);
+  // useEffect called after the  component render
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    const data = await fetch(
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.624480699999999&page_type=DESKTOP_WEB_LISTING"
+    );
+
+    const json = await data.json();
+
+    // console.log(
+    //   json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants
+    // );
+
+    // console.log(
+    //   json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants.forEach(
+    //     (card) => {
+    //       console.log(card.info.id);
+    //     }
+    //   )
+    // );
+    setListOfRestaurants(
+      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    );
+  };
+
+  if (listOfRestaurants.length === 0) {
+    return <h1>Loading ...</h1>;
+  }
 
   return (
     <div className="body">
@@ -56,9 +88,9 @@ const Body = () => {
             // filter logic here
 
             const filteredList = listOfRestaurants.filter(
-              (res) => res.data.avgRating > 4
+              (res) => res.info.avgRating > 4
             );
-            // console.log(listOfRestaurants);
+            console.log(filteredList);
             setListOfRestaurants(filteredList);
           }}
         >
@@ -66,9 +98,11 @@ const Body = () => {
         </button>
       </div>
       <div className="res-container">
-        {listOfRestaurants.map((restaurant) => (
-          <RestaurantCard key={restaurant.data.id} resData={restaurant} />
-        ))}
+        {listOfRestaurants.map((restaurant) => {
+          return (
+            <RestaurantCard key={restaurant.info.id} resData={restaurant} />
+          );
+        })}
       </div>
     </div>
   );
