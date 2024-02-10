@@ -59,7 +59,12 @@ const Body = () => {
 
     const json = await data.json();
 
-    console.log(json);
+    // console.log(
+    //   json.data.cards.forEach((card) => {
+    //     console.log(card.card.card.id);
+    //   })
+    // );
+    setListOfRestaurants(json?.data?.cards);
   };
 
   return (
@@ -82,7 +87,7 @@ const Body = () => {
       </div>
       <div className="res-container">
         {listOfRestaurants.map((restaurant) => (
-          <RestaurantCard key={restaurant.data.id} resData={restaurant} />
+          <RestaurantCard key={restaurant?.card?.card?.id} resData={restaurant} />
         ))}
       </div>
     </div>
