@@ -46,7 +46,7 @@ const Body = () => {
   //     },
   //   },
   // ];
-  const [listOfRestaurants, setListOfRestaurants] = useState(resList);
+  const [listOfRestaurants, setListOfRestaurants] = useState([]);
   // useEffect called after the  component render
   useEffect(() => {
     fetchData();
@@ -60,11 +60,19 @@ const Body = () => {
     const json = await data.json();
 
     // console.log(
-    //   json.data.cards.forEach((card) => {
-    //     console.log(card.card.card.id);
-    //   })
+    //   json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants
     // );
-    setListOfRestaurants(json?.data?.cards);
+
+    // console.log(
+    //   json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants.forEach(
+    //     (card) => {
+    //       console.log(card.info.id);
+    //     }
+    //   )
+    // );
+    setListOfRestaurants(
+      json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants
+    );
   };
 
   return (
@@ -78,7 +86,6 @@ const Body = () => {
             const filteredList = listOfRestaurants.filter(
               (res) => res.data.avgRating > 4
             );
-            // console.log(listOfRestaurants);
             setListOfRestaurants(filteredList);
           }}
         >
@@ -86,9 +93,12 @@ const Body = () => {
         </button>
       </div>
       <div className="res-container">
-        {listOfRestaurants.map((restaurant) => (
-          <RestaurantCard key={restaurant?.card?.card?.id} resData={restaurant} />
-        ))}
+        {listOfRestaurants.map((restaurant) => {
+          
+          return (
+            <RestaurantCard key={restaurant.info.id} resData={restaurant} />
+          );
+        })}
       </div>
     </div>
   );
