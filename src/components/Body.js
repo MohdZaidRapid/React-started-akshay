@@ -44,6 +44,11 @@ const Body = () => {
               // Filter the restuarant
               // searchtText
               console.log(searchText);
+              const filtereRestaurant = listOfRestaurants.filter((res) =>
+                res.info.name.includes(searchText)
+              );
+
+              setListOfRestaurants(filtereRestaurant);
             }}
           >
             Search
