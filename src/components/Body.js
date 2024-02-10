@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import RestaurantCard from "./RestaurantCard";
-import resList from "../utils/mockData";
+// import resList from "../utils/mockData";
 
 const Body = () => {
   // Local State Variable - Super powerful variable
@@ -74,6 +74,10 @@ const Body = () => {
       json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
   };
+
+  if (listOfRestaurants.length === 0) {
+    return <h1>Loading ...</h1>;
+  }
 
   return (
     <div className="body">
