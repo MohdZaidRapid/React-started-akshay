@@ -120,3 +120,10 @@ const [header,setHeader]  = useState("");
 
 setHeader("hello");
 it will rerender header component and this time value of header was hello so  it will update it
+
+
+<!-- Routing -->
+<!-- div deeper in useeffect hooks -->
+ # use Effect called after render of every component 
+ # if no dependency array => useEffect is called on every render
+ # if dependency array is empty = [] => useEffect called once
