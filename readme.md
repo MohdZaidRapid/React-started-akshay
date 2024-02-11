@@ -132,4 +132,10 @@ it will rerender header component and this time value of header was hello so  it
 <!-- Routing configuration -->
 <!-- crete browser will take a route in array of object  -->
 <!-- it is a object -->
-<!-- PRovide this configuration to  -->
+<!-- PRovide this configuration to Provider -->
+<!-- Outlet we can  -->
+
+
+# 2 types Routing in web apps
+- Client Side Routing
+- Server Side Routing
