@@ -139,3 +139,5 @@ it will rerender header component and this time value of header was hello so  it
 # 2 types Routing in web apps
 - Client Side Routing
 - Server Side Routing
+
+Link is sepcial component behind the scene it is using <a> anchor tag
