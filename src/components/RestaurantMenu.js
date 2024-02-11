@@ -14,25 +14,29 @@ const RestaurantMenu = () => {
     );
     const json = await data.json();
 
-    console.log(json);
+    console.log(json?.data.cards[0].card.card.info.name);
+    setResInfo(json?.data);
   };
+  const { name, cuisines, costForTwoMessage } =
+    restInfo?.cards[0].card?.card?.info;
 
-  //   if (restInfo === null) {
-  //     return <Shimmer />;
-  //   }
+//   if (restInfo === null) {
+//     return <Shimmer />;
+//   }
 
   return restInfo === null ? (
     <Shimmer />
   ) : (
     <div className="menu">
-      <h1>Name of the Restuarant </h1>
-      <h2>Menu</h2>
-      <ul>
-        <li>Biyani</li>
-        <li>Burgers</li>
-        <li>Diet Coke </li>
-      </ul>
-    </div>
+      <h1>{name} </h1>
+      <h2>{cuisines}</h2>
+      <h2>{costForTwoMessage}</h2>
+    <ul>
+      <li>Biyani</li>
+      <li>Burgers</li>
+      <li>Diet Coke </li>
+    </ul>
+    // </div>
   );
 };
 
