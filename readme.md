@@ -127,3 +127,9 @@ it will rerender header component and this time value of header was hello so  it
  # use Effect called after render of every component 
  # if no dependency array => useEffect is called on every render
  # if dependency array is empty = [] => useEffect called once
+
+
+<!-- Routing configuration -->
+<!-- crete browser will take a route in array of object  -->
+<!-- it is a object -->
+<!-- PRovide this configuration to  -->
