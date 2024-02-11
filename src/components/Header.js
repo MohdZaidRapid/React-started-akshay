@@ -7,7 +7,7 @@ const Header = () => {
 
   const [btnNameReact, setbtnNameReact] = useState("Login");
 
-  // use Effect called after render of every component
+  // use Effect called after render of every  component
   // If depedency array is this than useEffect is called very time btnName react changes my useEffect will be called
   // useEffect(() => {
   //   console.log("useEffect called");
