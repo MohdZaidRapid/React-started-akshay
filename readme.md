@@ -211,3 +211,5 @@ as Class component is call constructor will called it will initialise state as s
  *  <HTML (new API data>)
  * component did update
  */
+
+git add . && git commit -m "updating" && git push origin main
