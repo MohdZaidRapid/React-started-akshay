@@ -157,4 +157,10 @@ when parent component render  start rendering jsx
 when it sees children component it start loading it
 when childClass init it constructor is called and thensrender method is called
 
+<!-- how it render -->
+<!-- Parent Constructor
+ Parent render
+ Child Contructor
+Child Render -->
+
 
