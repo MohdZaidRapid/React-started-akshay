@@ -174,4 +174,21 @@ child render
 child component did mount
 parent component did mount
 
+why we make api call in component did mount
+
+
+parent constructor
+parent render
+    - zaid constructor
+    - zaid render
+    - 
+    - 
+    - zaid2  constructor
+    - zaid2  render
+    - 
+
+    <!-- batch together -->
+    - zaid comdidmount 
+    - zaid2  comdidmount
+- Parent ComponentDidMount 
 

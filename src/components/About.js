@@ -20,6 +20,10 @@ class About extends Component {
         <h2>This is react web series</h2>
         {/* <User name={"Zaid  Mohd function"} /> */}
         <UserClass name={"Zaidmohd from class"} location={"Delhi class"} />
+        <UserClass
+          name={"mohdzaid from class 2"}
+          location={"Old delhi class"}
+        />
       </div>
     );
   }
