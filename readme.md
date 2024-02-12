@@ -141,3 +141,5 @@ it will rerender header component and this time value of header was hello so  it
 - Server Side Routing
 
 Link is sepcial component behind the scene it is using <a> anchor tag
+
+#the component is able to inherit the properties of the parent component and also access the new props that have been passed in.
