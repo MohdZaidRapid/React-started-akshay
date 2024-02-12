@@ -6,12 +6,15 @@ class About extends Component {
   constructor(props) {
     super(props);
     console.log("Parent Constructor");
-   
   }
 
   componentDidMount() {
     console.log("Parent Component Did Mount ");
+  }
 
+  // removing from ui when we change page
+  componentWillUnmount() {
+    console.log("unmount ");
   }
 
   render() {
