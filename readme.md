@@ -147,3 +147,10 @@ Link is sepcial component behind the scene it is using <a> anchor tag
 loading a class base component
 whenever you creating a class instance a constructor is called
 this is best place to create based variable
+
+
+never update state variable directly
+this.state.count = this.state.count + 1;
+
+<!-- Lifecycle in react -->
+when component render  start rendering jsx 
