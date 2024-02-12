@@ -188,7 +188,8 @@ parent render
     - 
 
     <!-- batch together -->
+    <!-- DOM updated in single batch -->
     - zaid comdidmount 
-    - zaid2  comdidmount
+    - zaid2 comdidmount
 - Parent ComponentDidMount 
 
