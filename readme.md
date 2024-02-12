@@ -163,4 +163,8 @@ when childClass init it constructor is called and thensrender method is called
  Child Contructor
 Child Render -->
 
+construcor 
+render
+component did mount
+
 
