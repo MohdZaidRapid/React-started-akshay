@@ -194,3 +194,20 @@ parent render
 - Parent ComponentDidMount 
 
 as Class component is call constructor will called it will initialise state as soon as constructor called  component render with dummy data  and componentdidmount will called and api called was made it called setState and we will see updated cycle  and render happend because state change with updated value 
+
+/**
+ *
+ * Mounting life cycle
+ * Constructor
+ * Render (dummy)
+ *      <html> has dummy data
+ *  component did mount is called
+ *      <API called>
+ *  this.setState()
+ * 
+ * ---UPDATE cycle
+ * 
+ * Render method with api data in setState 
+ *  <HTML (new API data>)
+ * component did update
+ */

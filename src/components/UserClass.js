@@ -10,11 +10,11 @@ class UserClass extends React.Component {
       },
     };
 
-    // console.log(this.props.name + "Child Contructor");
+    console.log(this.props.name + "Child Contructor");
   }
 
   async componentDidMount() {
-    // console.log(this.props.name + "Child component did mount ");
+    console.log(this.props.name + "Child component did mount ");
     const data = await fetch("https://api.github.com/users/mohdzaid123");
     const json = await data.json();
 
@@ -22,6 +22,10 @@ class UserClass extends React.Component {
       userInfo: json,
     });
     console.log(json);
+  }
+
+  componentDidUpdate() {
+    console.log("Component Did update");
   }
 
   render() {
@@ -43,3 +47,20 @@ class UserClass extends React.Component {
 }
 
 export default UserClass;
+
+/**
+ *
+ * Mounting life cycle
+ * Constructor
+ * Render (dummy)
+ *      <html> has dummy data
+ *  component did mount is called
+ *      <API called>
+ *  this.setState()
+ * 
+ * ---UPDATE cycle
+ * 
+ * Render method with api data in setState 
+ *  <HTML (new API data>)
+ * component did update
+ */
