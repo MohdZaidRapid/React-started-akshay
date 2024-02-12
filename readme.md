@@ -143,3 +143,7 @@ it will rerender header component and this time value of header was hello so  it
 Link is sepcial component behind the scene it is using <a> anchor tag
 
 #the component is able to inherit the properties of the parent component and also access the new props that have been passed in.
+
+loading a class base component
+whenever you creating a class instance a constructor is called
+this is best place to create based variable
