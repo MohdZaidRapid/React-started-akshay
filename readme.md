@@ -167,4 +167,11 @@ construcor
 render
 component did mount
 
+parent constructor 
+parent render
+child constructor
+child render
+child component did mount
+parent component did mount
+
 
