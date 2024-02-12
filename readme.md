@@ -155,6 +155,6 @@ this.state.count = this.state.count + 1;
 <!-- Lifecycle in react -->
 when parent component render  start rendering jsx 
 when it sees children component it start loading it
-when childClass init it constructor is called
+when childClass init it constructor is called and thensrender method is called
 
 
