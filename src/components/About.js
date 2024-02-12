@@ -5,25 +5,21 @@ import UserClass from "./UserClass";
 class About extends Component {
   constructor(props) {
     super(props);
-    console.log("Parent Constructor");
+    // console.log("Parent Constructor");
+    this.state = {};
   }
 
   componentDidMount() {
-    console.log("Parent Component Did Mount ");
+    // console.log("Parent Component Did Mount ");
   }
 
   render() {
-    console.log("Parent render");
+    // console.log("Parent render");
     return (
       <div>
         <h1>About class component</h1>
         <h2>This is react web series</h2>
-        {/* <User name={"Zaid  Mohd function"} /> */}
-        <UserClass name={"Zaidmohd from class"} location={"Delhi class"} />
-        <UserClass
-          name={"mohdzaid from class 2"}
-          location={"Old delhi class"}
-        />
+        <UserClass name={"mohdzaid "} location={"Delhi class"} />
       </div>
     );
   }
