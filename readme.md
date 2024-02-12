@@ -153,4 +153,8 @@ never update state variable directly
 this.state.count = this.state.count + 1;
 
 <!-- Lifecycle in react -->
-when component render  start rendering jsx 
+when parent component render  start rendering jsx 
+when it sees children component it start loading it
+when childClass init it constructor is called
+
+
