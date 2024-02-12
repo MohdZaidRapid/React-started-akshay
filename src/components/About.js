@@ -6,11 +6,12 @@ class About extends Component {
   constructor(props) {
     super(props);
     // console.log("Parent Constructor");
-    this.state = {};
+   
   }
 
   componentDidMount() {
     // console.log("Parent Component Did Mount ");
+
   }
 
   render() {

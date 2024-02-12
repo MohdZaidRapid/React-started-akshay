@@ -193,3 +193,4 @@ parent render
     - zaid2 comdidmount
 - Parent ComponentDidMount 
 
+as Class component is call constructor will called it will initialise state as soon as constructor called  render with dummy data  and 

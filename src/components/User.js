@@ -7,6 +7,11 @@ const User = ({ name }) => {
   useEffect(() => {
     // Api call
   }, []);
+
+  // async function getUserInfo() 
+  // {
+
+  // }
   return (
     <div className="user-card">
       <h1>count = {count}</h1>
