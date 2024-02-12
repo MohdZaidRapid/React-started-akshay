@@ -120,3 +120,24 @@ const [header,setHeader]  = useState("");
 
 setHeader("hello");
 it will rerender header component and this time value of header was hello so  it will update it
+
+
+<!-- Routing -->
+<!-- div deeper in useeffect hooks -->
+ # use Effect called after render of every component 
+ # if no dependency array => useEffect is called on every render
+ # if dependency array is empty = [] => useEffect called once
+
+
+<!-- Routing configuration -->
+<!-- crete browser will take a route in array of object  -->
+<!-- it is a object -->
+<!-- PRovide this configuration to Provider -->
+<!-- Outlet we can  -->
+
+
+# 2 types Routing in web apps
+- Client Side Routing
+- Server Side Routing
+
+Link is sepcial component behind the scene it is using <a> anchor tag
