@@ -33,11 +33,10 @@ const Body = () => {
   };
 
   const onlineStatus = useOnlineStatus();
-  console.log(onlineStatus);
 
   if (onlineStatus === false)
     return (
-      <h1>Looks like you are offline please check your internet connection</h1>
+      <h1>Looks like you are offline !!! please check your internet connection</h1>
     );
 
   return listOfRestaurants.length === 0 ? (
