@@ -141,3 +141,75 @@ it will rerender header component and this time value of header was hello so  it
 - Server Side Routing
 
 Link is sepcial component behind the scene it is using <a> anchor tag
+
+#the component is able to inherit the properties of the parent component and also access the new props that have been passed in.
+
+loading a class base component
+whenever you creating a class instance a constructor is called
+this is best place to create based variable
+
+
+never update state variable directly
+this.state.count = this.state.count + 1;
+
+<!-- Lifecycle in react -->
+when parent component render  start rendering jsx 
+when it sees children component it start loading it
+when childClass init it constructor is called and thensrender method is called
+
+<!-- how it render -->
+<!-- Parent Constructor
+ Parent render
+ Child Contructor
+Child Render -->
+
+construcor 
+render
+component did mount
+
+parent constructor 
+parent render
+child constructor
+child render
+child component did mount
+parent component did mount
+
+why we make api call in component did mount
+
+
+parent constructor
+parent render
+    - zaid constructor
+    - zaid render
+    - 
+    - 
+    - zaid2  constructor
+    - zaid2  render
+    - 
+
+    <!-- batch together -->
+    <!-- DOM updated in single batch -->
+    - zaid comdidmount 
+    - zaid2 comdidmount
+- Parent ComponentDidMount 
+
+as Class component is call constructor will called it will initialise state as soon as constructor called  component render with dummy data  and componentdidmount will called and api called was made it called setState and we will see updated cycle  and render happend because state change with updated value 
+
+/**
+ *
+ * Mounting life cycle
+ * Constructor
+ * Render (dummy)
+ *      <html> has dummy data
+ *  component did mount is called
+ *      <API called>
+ *  this.setState()
+ * 
+ * ---UPDATE cycle
+ * 
+ * Render method with api data in setState 
+ *  <HTML (new API data>)
+ * component did update
+ */
+
+git add . && git commit -m "updating" && git push origin main
