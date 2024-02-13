@@ -12,6 +12,10 @@ class About extends Component {
     console.log("Parent Component Did Mount ");
   }
 
+  componentDidUpdate() {
+    console.log("component did update");
+  }
+
   // removing from ui when we change page
   componentWillUnmount() {
     console.log("unmount ");

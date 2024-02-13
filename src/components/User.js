@@ -6,9 +6,16 @@ const User = ({ name }) => {
 
   useEffect(() => {
     // Api call
+    setInterval(() => {
+      console.log("sdlsd");
+    }, 1000);
+
+    return () => {
+      
+    };
   }, []);
 
-  // async function getUserInfo() 
+  // async function getUserInfo()
   // {
 
   // }
