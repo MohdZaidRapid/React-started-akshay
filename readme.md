@@ -212,4 +212,50 @@ as Class component is call constructor will called it will initialise state as s
  * component did update
  */
 
+
+
+Single responsiblilty principle
+each component should have single responsibilty
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 git add . && git commit -m "updating" && git push origin main
+
+
+
+hooks is just a utility functions 
+
+<!-- bundling types -->
+Chunking
+Code Splitting
+lazy loading
+ondemand loading
+Dynamic Bundling
+dynamic import
+
+<!-- why  lazy loading throw an error-->
+load this page we only have one file 
+and does not have grocery code
+react throw error beacuse grocery code was not there  react throw an error
+to solve this we use suspense
+Suspense is an component
+what should reat render when code was nothere threr we will use fallback inside suspense
