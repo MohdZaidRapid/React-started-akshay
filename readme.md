@@ -243,3 +243,13 @@ git add . && git commit -m "updating" && git push origin main
 
 
 hooks is just a utility functions 
+
+<!-- bundling types -->
+Chunking
+Code Splitting
+lazy loading
+ondemand loading
+Dynamic Bundling
+
+<!-- why  lazy loading throw an error-->
+because it take less time to complete while react page was still rendering so it throw an error
