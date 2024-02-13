@@ -212,4 +212,32 @@ as Class component is call constructor will called it will initialise state as s
  * component did update
  */
 
+
+
+Single responsiblilty principle
+each component should have single responsibilty
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 git add . && git commit -m "updating" && git push origin main
+
+
