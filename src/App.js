@@ -11,6 +11,8 @@ import Shimmer from "./components/Shimmer";
 // import Grocery from "./components/Grocery";
 
 const Grocery = lazy(() => import("./components/Grocery"));
+const About = lazy(() => "./components/About.js");
+
 const AppLayout = () => {
   return (
     <div className="app">
@@ -31,7 +33,11 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <About />,
+        element: (
+          <Suspense fallback={<Shimmer />}>
+            <About />
+          </Suspense>
+        ),
       },
       {
         path: "/contact",

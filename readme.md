@@ -250,6 +250,7 @@ Code Splitting
 lazy loading
 ondemand loading
 Dynamic Bundling
+dynamic import
 
 <!-- why  lazy loading throw an error-->
 load this page we only have one file 
