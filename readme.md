@@ -252,4 +252,9 @@ ondemand loading
 Dynamic Bundling
 
 <!-- why  lazy loading throw an error-->
-because it take less time to complete while react page was still rendering so it throw an error
+load this page we only have one file 
+and does not have grocery code
+react throw error beacuse grocery code was not there  react throw an error
+to solve this we use suspense
+Suspense is an component
+what should reat render when code was nothere threr we will use fallback inside suspense
