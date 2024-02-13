@@ -241,3 +241,5 @@ each component should have single responsibilty
 git add . && git commit -m "updating" && git push origin main
 
 
+
+hooks is just a utility functions 
