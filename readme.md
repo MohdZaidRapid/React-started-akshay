@@ -259,3 +259,5 @@ react throw error beacuse grocery code was not there  react throw an error
 to solve this we use suspense
 Suspense is an component
 what should reat render when code was nothere threr we will use fallback inside suspense
+
+postcssrc will use tailwind to understand parcel 
