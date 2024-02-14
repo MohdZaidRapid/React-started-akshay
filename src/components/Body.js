@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, { withPromotedLabel } from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
@@ -10,12 +10,14 @@ const Body = () => {
 
   const [searchText, setSearchText] = useState("");
 
+  const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
+
   useEffect(() => {
     fetchData();
   }, []);
 
   // whenever state variables update ,react trigger a reconcilation cycle(re-render the component)
-  console.log("Body Rendered");
+  console.log("Body Rendered", listOfRestaurants);
 
   const fetchData = async () => {
     const data = await fetch(
@@ -93,7 +95,15 @@ const Body = () => {
             key={restaurant.info.id}
             to={"/restaurants/" + restaurant.info.id}
           >
-            <RestaurantCard resData={restaurant} />
+            {
+              /* {if the restaurant is promoted then add a promoted label to it } */
+
+              restaurant.info.isOpen ? (
+                <RestaurantCardPromoted resData={restaurant} />
+              ) : (
+                <RestaurantCard resData={restaurant} />
+              )
+            }
           </Link>
         ))}
       </div>
