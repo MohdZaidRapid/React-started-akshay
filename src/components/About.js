@@ -30,9 +30,10 @@ class About extends Component {
         <div>
           LoggedInUser User
           <UserContext.Consumer>
-            {({LoggedInUser}) => (
-              <h1 className="text-xl font-bold">{LoggedInUser}</h1>
-            )}
+            {({ loggedInUser }) => {
+              console.log(loggedInUser);
+              return <h1 className="text-xl font-bold">{loggedInUser}</h1>;
+            }}
           </UserContext.Consumer>
         </div>
         <h2>This is react web series</h2>
