@@ -260,4 +260,8 @@ to solve this we use suspense
 Suspense is an component
 what should reat render when code was nothere threr we will use fallback inside suspense
 
-postcssrc will use tailwind to understand parcel 
+postcssrc will use tailwind to understand parcel
+
+<!-- controlled component -->
+when we control child compoenent state from parent component it is known as controlled component 
+

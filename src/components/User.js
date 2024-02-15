@@ -10,9 +10,7 @@ const User = ({ name }) => {
       console.log("sdlsd");
     }, 1000);
 
-    return () => {
-      
-    };
+    return () => {};
   }, []);
 
   // async function getUserInfo()
@@ -20,7 +18,7 @@ const User = ({ name }) => {
 
   // }
   return (
-    <div className="user-card">
+    <div className="user-card m-4 p-4 bg-gray-50 rounded-lg">
       <h1>count = {count}</h1>
       <h1>count = {count2}</h1>
       <h2>Name: {name}</h2>
