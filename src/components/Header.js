@@ -10,8 +10,8 @@ const Header = () => {
   const [btnNameReact, setbtnNameReact] = useState("Login");
   const onlineStatus = useOnlineStatus();
 
-  const data = useContext(UserContext);
-  console.log(data);
+  const { loggedInUser } = useContext(UserContext);
+  console.log(loggedInUser);
 
   // use Effect called after render of every  component
   // If depedency array is this than useEffect is called very time btnName react changes my useEffect will be called
@@ -51,7 +51,7 @@ const Header = () => {
           >
             {btnNameReact}
           </button>
-          <li className="px-4">Cart</li>
+          <li className="px-4 font-bold">{loggedInUser}</li>
         </ul>
       </div>
     </div>
