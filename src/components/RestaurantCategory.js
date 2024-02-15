@@ -21,7 +21,7 @@ const RestaurantCategory = ({ data }) => {
         </div>
         {showItems && <ItemList items={data.itemCards} />}
       </div>
-      {/* Accordion Body */}
+      
     </div>
   );
   arr;
