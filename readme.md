@@ -261,3 +261,4 @@ Suspense is an component
 what should reat render when code was nothere threr we will use fallback inside suspense
 
 postcssrc will use tailwind to understand parcel 
+
