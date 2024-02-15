@@ -3,6 +3,7 @@ import RestaurantCard, { withPromotedLabel } from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+// import Error from "./Error";
 
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
@@ -42,6 +43,14 @@ const Body = () => {
         Looks like you are offline !!! please check your internet connection
       </h1>
     );
+
+  if (listOfRestaurants === undefined) {
+    return <h1>No Recipe found</h1>;
+  }
+
+  if (listOfRestaurants === undefined || listOfRestaurants === null) {
+    return <h1>Not Found Please refresh page </h1>;
+  }
 
   return listOfRestaurants.length === 0 ? (
     <Shimmer />
@@ -98,7 +107,7 @@ const Body = () => {
             {
               /* {if the restaurant is promoted then add a promoted label to it } */
 
-              restaurant.info.isOpen ? (
+              restaurant.info.veg === true ? (
                 <RestaurantCardPromoted resData={restaurant} />
               ) : (
                 <RestaurantCard resData={restaurant} />
