@@ -217,30 +217,7 @@ as Class component is call constructor will called it will initialise state as s
 Single responsiblilty principle
 each component should have single responsibilty
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 git add . && git commit -m "updating" && git push origin main
-
-
 
 hooks is just a utility functions 
 
@@ -265,3 +242,14 @@ postcssrc will use tailwind to understand parcel
 <!-- controlled component -->
 when we control child compoenent state from parent component it is known as controlled component 
 
+<!--Redux-->
+redux work in data layer
+
+<!-- Redux Toolkit -->
+- Install @reduxjs/toolkit and react-redux
+- Build our store
+- Connect our store to our app
+- Slice (cartSlice)
+- dispatch(action)
+- useSelector  
+- when you are subscribing to store 
