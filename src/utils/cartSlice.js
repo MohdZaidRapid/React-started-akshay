@@ -5,9 +5,12 @@ const cartSlice = createSlice({
   initialState: {
     items: [],
   },
+
   reducers: {
     //action -> reducer fuction modifies store
+    // action.payload ="pizza"
     addItem: (state, action) => {
+      // we mutating the state here
       state.items.push(action.payload);
     },
     removeItem: (state, action) => {
@@ -29,4 +32,4 @@ export const { addItem, clearCart, removeItem } = cartSlice.actions;
 
 export default cartSlice.reducer;
 
-// action is api commuticate to redux store
+// action is api communicate to redux store

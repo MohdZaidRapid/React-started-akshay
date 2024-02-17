@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Error from "./components/Error";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Shimmer from "./components/Shimmer";
+import Cart from "./components/Cart.js";
 import UserContext from "./utils/UserContext.js";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore.js";
@@ -75,6 +76,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/restaurants/:resId",
         element: <RestaurantMenu />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
       },
     ],
 
