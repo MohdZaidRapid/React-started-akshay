@@ -253,3 +253,4 @@ redux work in data layer
 - dispatch(action)
 - useSelector  
 - when you are subscribing to store 
+- subscribe bto store
