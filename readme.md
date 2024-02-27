@@ -49,7 +49,7 @@ render
 
 <!-- Props -->
 props are normal arguements to our function
-passing props ===passing arguements
+passing props === passing arguements
 
 <!--  jargon-->
 confing driven ui
@@ -275,15 +275,15 @@ redux work in data layer
 - Installed babel dependencies
 - Configure babel  
 - Configure parcel Config file to disable default  babel tranpilation
-
 # jest configuration
 npx jest --init
-
-
 jsdom is browser with test cases give super power of browser
 install jsdom library
 install @babel/preset-react to make jsx work in these component test
+@babel/preset-react include inside babel config
+babel converting component code to html code to run test easily
+Install @testing-library/jest-dom
 
-@babel/preset-react include inside bavel config
+npm i -D @testing-library/jest-dom
 
-babel converting compoenent code to html code to run test easily
+
