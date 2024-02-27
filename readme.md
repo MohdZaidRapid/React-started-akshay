@@ -263,8 +263,17 @@ redux work in data layer
 
 
 <!-- Unit testing  -->
-- unit testing means u test component in isolation
+- Unit testing means u test component in isolation
 
 <!-- Integration testing -->
-- testing the integration of the component
+- Testing the integration of the component
+
+
+# Setting up testing
+- install react Testing library
+- Installed jest
+- Installed babel dependencies
+- Configure babel  
+- Configure parcel Config file to disable default  babel tranpilation
+
 
