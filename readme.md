@@ -276,4 +276,10 @@ redux work in data layer
 - Configure babel  
 - Configure parcel Config file to disable default  babel tranpilation
 
+# jest configuration
+npx jest --init
+
+
+jsdom is browser with test cases give super power of browser
+install jsdom library
 
