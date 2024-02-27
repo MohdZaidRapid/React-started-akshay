@@ -282,4 +282,8 @@ npx jest --init
 
 jsdom is browser with test cases give super power of browser
 install jsdom library
+install @babel/preset-react to make jsx work in these component test
 
+@babel/preset-react include inside bavel config
+
+babel converting compoenent code to html code to run test easily
