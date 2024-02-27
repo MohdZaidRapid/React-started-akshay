@@ -254,3 +254,17 @@ redux work in data layer
 - useSelector  
 - when you are subscribing to store 
 - subscribe bto store
+
+
+# Types of testing developer can do
+- Unit Testing
+- Integration testing
+- End to End (e2e) testing
+
+
+<!-- Unit testing  -->
+- unit testing means u test component in isolation
+
+<!-- Integration testing -->
+- testing the integration of the component
+
