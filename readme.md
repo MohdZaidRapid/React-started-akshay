@@ -287,3 +287,5 @@ Install @testing-library/jest-dom
 npm i -D @testing-library/jest-dom
 
 
+when you pdate state in test wrap test in act component
+act comes from react-dom/test-utils

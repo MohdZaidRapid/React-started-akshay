@@ -1,78 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1709108935630" clover="3.2.0">
-  <project timestamp="1709108935630" name="All files">
-    <metrics statements="39" coveredstatements="31" conditionals="4" coveredconditionals="1" methods="15" coveredmethods="7" elements="58" coveredelements="39" complexity="0" loc="39" ncloc="39" packages="2" files="9" classes="9"/>
-    <package name="components">
-      <metrics statements="20" coveredstatements="17" conditionals="4" coveredconditionals="1" methods="8" coveredmethods="5"/>
-      <file name="Contact.js" path="C:\Users\Anas\Desktop\ReactAkshaySaini\src\components\Contact.js">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="4" type="stmt"/>
-      </file>
-      <file name="Header.js" path="C:\Users\Anas\Desktop\ReactAkshaySaini\src\components\Header.js">
-        <metrics statements="8" coveredstatements="7" conditionals="4" coveredconditionals="1" methods="3" coveredmethods="2"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="12" count="2" type="stmt"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="18" count="4" type="stmt"/>
-        <line num="19" count="2" type="stmt"/>
-        <line num="27" count="2" type="stmt"/>
-        <line num="54" count="0" type="cond" truecount="0" falsecount="2"/>
-      </file>
-      <file name="RestaurantCard.js" path="C:\Users\Anas\Desktop\ReactAkshaySaini\src\components\RestaurantCard.js">
-        <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="32" count="1" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-      </file>
-      <file name="sum.js" path="C:\Users\Anas\Desktop\ReactAkshaySaini\src\components\sum.js">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="utils">
-      <metrics statements="19" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="2"/>
-      <file name="UserContext.js" path="C:\Users\Anas\Desktop\ReactAkshaySaini\src\utils\UserContext.js">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="3" count="2" type="stmt"/>
-      </file>
-      <file name="appStore.js" path="C:\Users\Anas\Desktop\ReactAkshaySaini\src\utils\appStore.js">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="5" count="1" type="stmt"/>
-      </file>
-      <file name="cartSlice.js" path="C:\Users\Anas\Desktop\ReactAkshaySaini\src\utils\cartSlice.js">
-        <metrics statements="5" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="31" count="1" type="stmt"/>
-      </file>
-      <file name="constants.js" path="C:\Users\Anas\Desktop\ReactAkshaySaini\src\utils\constants.js">
-        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="2" count="2" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
-      </file>
-      <file name="useOnlineStatus.js" path="C:\Users\Anas\Desktop\ReactAkshaySaini\src\utils\useOnlineStatus.js">
-        <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="17" count="2" type="stmt"/>
-      </file>
-    </package>
+<coverage generated="1709112090308" clover="3.2.0">
+  <project timestamp="1709112090308" name="All files">
+    <metrics statements="33" coveredstatements="20" conditionals="12" coveredconditionals="8" methods="10" coveredmethods="4" elements="55" coveredelements="32" complexity="0" loc="33" ncloc="33" packages="1" files="1" classes="1"/>
+    <file name="Body.js" path="C:\Users\Anas\Desktop\ReactAkshaySaini\src\components\Body.js">
+      <metrics statements="33" coveredstatements="20" conditionals="12" coveredconditionals="8" methods="10" coveredmethods="4"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="10" count="4" type="stmt"/>
+      <line num="11" count="3" type="stmt"/>
+      <line num="13" count="3" type="stmt"/>
+      <line num="15" count="3" type="stmt"/>
+      <line num="17" count="3" type="stmt"/>
+      <line num="18" count="2" type="stmt"/>
+      <line num="22" count="3" type="stmt"/>
+      <line num="24" count="3" type="stmt"/>
+      <line num="25" count="2" type="stmt"/>
+      <line num="29" count="2" type="stmt"/>
+      <line num="31" count="2" type="stmt"/>
+      <line num="34" count="2" type="stmt"/>
+      <line num="39" count="3" type="stmt"/>
+      <line num="41" count="3" type="cond" truecount="1" falsecount="1"/>
+      <line num="42" count="0" type="stmt"/>
+      <line num="48" count="3" type="cond" truecount="1" falsecount="1"/>
+      <line num="49" count="0" type="stmt"/>
+      <line num="52" count="3" type="cond" truecount="3" falsecount="1"/>
+      <line num="53" count="0" type="stmt"/>
+      <line num="56" count="3" type="stmt"/>
+      <line num="58" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="69" count="0" type="stmt"/>
+      <line num="77" count="0" type="stmt"/>
+      <line num="78" count="0" type="stmt"/>
+      <line num="79" count="0" type="stmt"/>
+      <line num="82" count="0" type="stmt"/>
+      <line num="93" count="0" type="stmt"/>
+      <line num="94" count="0" type="stmt"/>
+      <line num="96" count="0" type="stmt"/>
+      <line num="97" count="0" type="stmt"/>
+      <line num="108" count="0" type="stmt"/>
+      <line num="114" count="9" type="stmt"/>
+    </file>
   </project>
 </coverage>
