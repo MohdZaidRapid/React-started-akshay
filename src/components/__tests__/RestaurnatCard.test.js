@@ -14,10 +14,12 @@ it("should render RestaurantCard component with props data", () => {
   const { info } = mockData;
 
   // Query for elements using info properties
-  const name = screen.getByText(info.name);
-
-  // Log the value of name
-  console.log(name.textContent);
+  //   const name = screen.getByText(info.name);
+  const name = screen.getByText(/Pizza Hut/);
 
   expect(name).toBeInTheDocument();
+});
+
+it("should render Restaurant Card with promoted label", () => {
+  // test higher order component
 });
