@@ -2,6 +2,7 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import { act } from "react-dom/test-utils";
 import RestaurantMenu from "../RestaurantMenu";
 import Header from "../Header";
+import Cart from "../Cart";
 
 import MOCK_DATA from "../mocks/mockResMenu.json";
 import "@testing-library/jest-dom";
@@ -22,6 +23,7 @@ it("should Load Restaurant Menu Component", async () => {
         <Provider store={appStore}>
           <Header />
           <RestaurantMenu />
+          <Cart />
         </Provider>
       </BrowserRouter>
     )
@@ -44,4 +46,12 @@ it("should Load Restaurant Menu Component", async () => {
   fireEvent.click(addBtns[1]);
 
   expect(screen.getByText("Cart -(2 items)")).toBeInTheDocument();
+
+  expect(screen.getAllByTestId("foodItems").length).toBe(19);
+
+  fireEvent.click(screen.getByRole("button", { name: "Clear Cart" }));
+
+  expect(screen.getAllByTestId("foodItems").length).toBe(17);
+
+  expect(screen.getByText("Cart is empty. Add item to cart!"));
 });
