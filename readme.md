@@ -49,7 +49,7 @@ render
 
 <!-- Props -->
 props are normal arguements to our function
-passing props ===passing arguements
+passing props === passing arguements
 
 <!--  jargon-->
 confing driven ui
@@ -254,3 +254,38 @@ redux work in data layer
 - useSelector  
 - when you are subscribing to store 
 - subscribe bto store
+
+
+# Types of testing developer can do
+- Unit Testing
+- Integration testing
+- End to End (e2e) testing
+
+
+<!-- Unit testing  -->
+- Unit testing means u test component in isolation
+
+<!-- Integration testing -->
+- Testing the integration of the component
+
+
+# Setting up testing
+- install react Testing library
+- Installed jest
+- Installed babel dependencies
+- Configure babel  
+- Configure parcel Config file to disable default  babel tranpilation
+# jest configuration
+npx jest --init
+jsdom is browser with test cases give super power of browser
+install jsdom library
+install @babel/preset-react to make jsx work in these component test
+@babel/preset-react include inside babel config
+babel converting component code to html code to run test easily
+Install @testing-library/jest-dom
+
+npm i -D @testing-library/jest-dom
+
+
+when you pdate state in test wrap test in act component
+act comes from react-dom/test-utils

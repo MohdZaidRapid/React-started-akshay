@@ -11,24 +11,32 @@ const RestaurantMenu = () => {
   const { resId } = useParams();
 
   const restInfo = useRestaurantMenu(resId);
+  console.log("resinfo", restInfo);
   const [showIndex, setShowIndex] = useState(null);
 
   if (restInfo === null) {
     return <Shimmer />;
   }
+  // console.log(restInfo?.cards[2].card?.card?.info);
   const { name, cuisines, costForTwoMessage } =
-    restInfo?.cards[0].card?.card?.info;
-  const { itemCards } =
-    restInfo?.cards[2].groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card;
+    restInfo?.cards[2].card?.card?.info;
 
-  // console.log(restInfo?.cards[2].groupedCard?.cardGroupMap?.REGULAR?.cards);
+  // const { itemCards } =
+  //   restInfo?.cards[2].groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card;
+
+  // console.log(
+  //   "croorect",
+  //   // restInfo?.cards[2].groupedCard?.cardGroupMap?.REGULAR?.cards
+  //   restInfo?.cards[4].groupedCard
+  // );
 
   const categories =
-    restInfo?.cards[2].groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
+    restInfo?.cards[4].groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
       (c) =>
         c.card?.card?.["@type"] ===
         "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
     );
+  // console.log("categories  category", categories);
 
   return (
     <div className="menu  text-center">
